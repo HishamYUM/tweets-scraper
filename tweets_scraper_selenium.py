@@ -223,4 +223,4 @@ if __name__ == '__main__':
     file_path = ""			# Fill in file_path to save tweets
     search_query = ""		# Fill in search query for type of tweets
 
-    main(username, password, search_query, file_path)
+    main(username, password, search_query, file_path) # run main
