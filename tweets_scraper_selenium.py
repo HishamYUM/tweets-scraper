@@ -22,7 +22,7 @@ def login_to_twitter(username, password, driver):
 	# Define login url
 	login_url = 'https://twitter.com/login'
     
-    # Go to login url
+    # Get login url
 	driver.get(login_url)
 	
 	sleep(2)
