@@ -94,10 +94,10 @@ def scroll_down_page(driver, last_height, num_seconds_to_load=10, scroll_attempt
 	# wait time to load
 	sleep(num_seconds_to_load)
 
-    	# Calculate new scroll height and compare with last scroll height
+    # Calculate new scroll height
 	new_height = driver.execute_script("return document.body.scrollHeight")
 
-	# break condition when the page can't be scrolled further
+	# Compare new scroll height with last scroll height
 	if new_height == last_height:
 		end_of_scroll_region = True
 
@@ -221,6 +221,6 @@ if __name__ == '__main__':
     username = "" 			# Fill in twitter username
     password = "" 			# Fill in twitter password
     file_path = ""			# Fill in file_path to save tweets
-    search_query = ""			# Fill in search query for type of tweets
+    search_query = ""		# Fill in search query for type of tweets
 
     main(username, password, search_query, file_path)
